@@ -2,7 +2,7 @@ const express = require('express');
 const request = require('request');
 const morgan = require('morgan');
 const path = require('path');
-const db = require('./db/pg');
+const db = require('./db/pgp');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
 
@@ -17,6 +17,14 @@ app.use(bodyParser.json());
 app.get('/', (req, res)=>{
   res.sendFile('/index.html')
 })
+
+// THREATRES
+
+app.get('/theaters', db.showTheaters, (req, res) => {
+  // takes db.showThreatres
+  var data = res.rows;
+  res.send(data);
+});
 
 app.listen(port, () => {
   console.log('Hellloooooooo Sexyyy! ', port);
