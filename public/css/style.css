@@ -1,0 +1,56 @@
+li {
+ list-style-type: none;
+}
+
+a {
+ text-decoration: none;
+}
+
+a:hover {
+ text-decoration: underline;
+}
+
+#container {
+ width: 80%;
+ margin: 0 auto;
+}
+
+#navbar {
+ width: 100%;
+ margin: 0 auto;
+ background-color: green;
+ margin-top: 20px;
+ margin-bottom: 20px;
+}
+
+#navbar li {
+ font-size: 40px;
+ display: inline;
+ padding-right: 40px;
+}
+
+#navbar ul {
+ margin: 0 auto;
+}
+
+#navbar a {
+text-decoration: none;
+color: black;
+}
+
+#navbar a:hover {
+text-decoration: underline;
+color: #E6E6FA;
+}
+
+
+
+#search {
+ float: right;
+ margin: 14px;
+
+}
+
+#searchinput {
+ margin-right: 18px;
+}
